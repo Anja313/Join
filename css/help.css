@@ -1,0 +1,189 @@
+.helpHeader {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+    padding-top: 3%;
+    text-align: center;
+    color: #1E3190;
+}
+
+.helpButtonBox {
+   
+    display: flex;
+   
+
+}
+
+.buttonSelf {
+    width: 20vw;
+    height: 6vh;
+    font-size: 18px;
+    cursor: pointer;
+    color: #1E3190;
+    margin: 2%;
+    outline: none;
+    font-weight: bold;
+    border: 1px solid rgb(134, 133, 133);
+    border-radius: 5px;
+   
+}
+
+.buttonSelf:hover {
+    background-color: #1E3190;
+    color: #ccc;
+}
+
+.d-none {
+    display: none;
+}
+
+
+.usImg {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    padding: 20px;
+    object-fit:cover;
+}
+
+.helpImg {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.impressuTitel{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.imgKanban{
+    width: 50%;
+    margin-top: 3%;
+}
+
+.kanban{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.containKanban{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 15%;
+    padding-top: 3%;
+    color: #1E3190;
+
+}
+.Definitio{
+align-items: center;
+display: block;
+margin: 50%;
+
+}
+
+ .KanbanDefinitionen{
+        margin: 0 15% ;
+    }
+
+.name{
+
+    margin: 0;
+    text-align: center;
+}
+.impressum {
+    margin: 3% 15% 5% 30%;
+   
+}
+
+
+
+.haftung {
+    white-space: inherit;
+    text-align: justify;
+   
+}
+
+
+@media (max-width: 1000px) {
+
+    .helpHeader {
+        padding-top: 15% !important;
+        margin-left: 0;
+    }
+
+    .buttonKanban{
+        margin-left: 0%;
+        padding-top: 3%;
+    }
+
+      .impressum {
+        margin: 3% 15% 5% 15%;
+    }
+
+    
+.containKanban{
+
+    margin-left: 0%;
+ 
+
+}
+}
+
+
+
+
+@media (max-width: 772px) {
+    .helpHeader {
+        padding-top: 20% !important;
+      
+    }
+
+    .buttonSelf {
+        width: 25vw;
+        height: 5vh;
+        font-size: 16px;
+    }
+
+    .usImg {
+        padding: 15px;
+        width: 110px;
+        height: 110px;
+    
+    }
+
+   
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .helpImg {
+        margin-top: 5%;
+        flex-direction: column;
+    }
+    
+    h1{
+        padding-top: 6%;
+        font-size: 28px;
+    }
+
+
+    .buttonSelf {
+        width: 30vw;
+        height: 5vh;
+        font-size: 16px;
+    }
+} 
