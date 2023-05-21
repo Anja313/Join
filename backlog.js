@@ -54,7 +54,7 @@ async function updateBacklog() {
 
 function templateBacklog(i) {
     console.log('2');
-    return `
+    return /*html*/ `
  <div class="backlogTasks ${tasks[i]['Category']}" id="backlogTasks-${i}" onclick="openTask(${i}, 'backlog')">
     <div class="backlogAssigned">
    

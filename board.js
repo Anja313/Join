@@ -140,7 +140,7 @@ async function includeHTML() {
  * @param {number}
  */
 
-open = true;
+let open = true;
 
 function openTodoInfo(i) {
     if (open == true) {

@@ -129,15 +129,12 @@ async function changeTask(i, page) {
 }
 
 function templateMoveTo(i, page) {
-    return `
+    return /*html*/ `
     
     <div class="dialogAllBacklog" id="${page}-item-${i}">
-        <img src="./img/x-icon.png"class="xICon" onclick="closeDialog('dialog-bg-${page}')"></img>
-        <div class"icon-menu">
-            <button class="move circle-plus"  id="move-to-board-icon" onclick="move(${i}, '${page}')">Move to Board</button>
-          <!-- <button class="move circle-minus" id="move-to-backlog-icon" onclick="move(${i}, '${page}')">Remove from Board</button>
-            <button class="move square"  onclick="editTask(${i}, '${page}')">Edit Task</button> -->
-            <button class="move trash-can" onclick="deleteTask(${i}, '${page}')">Delete Task</button>
+        <div class="icon-menu">
+            <button class="move"  id="move-to-board-icon" onclick="move(${i}, '${page}')">Move to Board</button>
+            <button class="move" onclick="deleteTask(${i}, '${page}')">Delete Task</button>
         </div>
         <div class="task-header">
             <div class="column-dialog">
@@ -152,34 +149,40 @@ function templateMoveTo(i, page) {
                         <span>${users[i]['name']}</span>
 
                     </div>
+                    </div>
+                    </div>
+          
+ 
+
+
+                <div class="box">
+
+                    <div class="boxIn in" >
+                    <p>Category:</p>
+                    <p>Urgency:</p>
+                    <p>Due Date:</p>
+                    <p>Description:</p>
+
+
+                    </div>
+
+
+
+                    <div class="boxIn">
+                    <p >${tasks[i]['Category']}</p>
+                    <p >${tasks[i]['Urgency']}</p>
+                    <p>${tasks[i]['Date']}</p>
+                    <p >${tasks[i]['Description']}</p>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="task-settings">
-            <div class="column-dialog">
-                <span class="categoryPadding" >Category:</span>
-                <p class="categoryID">${tasks[i]['Category']}</p>
-            </div>
-            <div class="column-dialog">
-                <span class="categoryPadding">Urgency:</span>
-                <p class="urgencyID">${tasks[i]['Urgency']}</p>
-            </div>
-            <div class="column-dialog">
-                <span class="categoryPadding">Due Date:</span>
-                <p class="dateID">${tasks[i]['Date']}</p>
-            </div>
-        </div>
-        <div class="column-dialog">
-            <span class="categoryPadding">Description:</span>
-            <p class="description">${tasks[i]['Description']}</p>
-        </div>
-    </div>
-    `;
+</div>
+
+   `; 
 }
 
 
 function templateEditTask(i, page) {
-    return `
+    return /*html*/ `
     <div class="edit-dialog">
         <button class="buttonClose" onclick="closeDialog('dialog-bg-${page}')" title="Close"></button>
         <form action="" onsubmit="changeTask(${i}, '${page}'); return false;" class="add-task-form">

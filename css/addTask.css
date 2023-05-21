@@ -6,7 +6,7 @@ body {
 }
 
 .addtaskTitel {
-    padding-left: 20%;
+    padding-left: 10%;
     font-size: 20px;
 }
 
@@ -17,7 +17,7 @@ body {
     width: 90vw;
     background-color: rgb(242, 239, 248);
     flex-wrap: wrap;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 
 .inputStyle {
@@ -168,16 +168,23 @@ button:hover {
         height: auto;
         padding-bottom: 5%;
         width: 80% !important;
+          margin-left: 5%;
     }
+
     .addtaskTitel {
-        padding-left: 11%;
-        font-size: 20px;
+        padding-left: 5%;
+        font-size: 16px;
         margin-top: 8rem;
      
     }
+
+    button {
+        width: 18vw;
+    }
+
     .inputStyle {
         width: 40vw;
-    }
+    } 
     .inputDescriptionField {
         width: 40vw;
     }
@@ -186,83 +193,49 @@ button:hover {
     }
     .buttonStayl {
         font-size: 15px;
-    }
+    } 
 }
 
-@media (max-width: 900px) {
-    .taskCreated {
-        left: 20%;
-    }
-}
 
-@media (max-width: 650px) {
-    button {
-        width: 20vw;
-    }
-    .buttonStayl {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-    .taskCreated {
-        width: 400px;
-        height: 180px;
-        top: 48%;
-        left: 16%;
-    }
-}
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
     .taskCreated {
         width: 350px;
         height: 150px;
         left: 8%;
     }
-    button {
-        width: 28vw;
-    }
-}
 
-@media (max-width: 400px) {
-    .taskCreatedButton {
-        width: 20vw;
-    }
-    .taskCreated {
-        width: 300px;
-        height: 120px;
-        top: 45%;
-    }
+
     .addtaskTitel {
-        padding-left: 11%;
-        font-size: 20px;
-    }
-    button {
-        width: 28vw;
-    }
-    .addtaskTitel {
-        padding-left: 11%;
-        font-size: 16px;
-    }
-    p {
-        font-size: 18px;
+       
+        font-size: 14px;
     }
     .buttonStayl {
         font-size: 10px;
         margin-left: 10px;
     }
+
+    .avatar {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .userContain {
+        width: 75px;
+        height: 90px;
+        opacity: 0.4;
+    }
+
+    .addtaskTitel {
+       
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+    .inputStyle {
+        font-size: 14px;
+    }
 }
-
-
-/* #closed{
-
-    z-index: 1;
-    background-color: rgb(250, 250, 250);
-    position: absolute;
-    left: 200px;
-    height: 100vh;
-    width: 86vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-   
- } */
